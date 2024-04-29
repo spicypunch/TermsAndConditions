@@ -12,9 +12,11 @@ class PersonalInformationCollectionScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text('살말 서비스 이용약관',
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20)),
-            Text('''
+            const Text(
+              '살말 개인정보처리방침',
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+            ),
+            const Text('''
 1. 개인정보처리방침
 개인정보처리방침은 (주)스타일멘토(이하”회사”)가 특정한 가입절차를 거친 이용자들만 이용 가능한 서비스를 제공함에 있어, 개인정보를 어떻게 수집,이용,보관,파기하는지에 대한 정보를 담은 방침을 의미합니다. 개인정보처리방침은 개인정보보호법 등 국내 개인정보 보호 법령을 모두 준수하고 있습니다. 본 개인정보 처리방침에서 정하지 않은 용어의 정의는 서비스 이용약관을 따릅니다.
 
@@ -77,9 +79,7 @@ class PersonalInformationCollectionScreen extends StatelessWidget {
             '''),
             Container(
               margin: EdgeInsets.all(8),
-              decoration: BoxDecoration(
-                border: Border.all(color: Colors.grey)
-              ),
+              decoration: BoxDecoration(border: Border.all(color: Colors.grey)),
               child: DataTable(columns: const <DataColumn>[
                 DataColumn(label: Text('수탁자\n')),
                 DataColumn(label: Text('위탁 업무 내용\n')),
@@ -92,7 +92,7 @@ class PersonalInformationCollectionScreen extends StatelessWidget {
                 ])
               ]),
             ),
-    Text('''
+            const Text('''
 5. 개인정보 파기절차 및 파기방법
 이용자의 개인정보는 원칙적으로 개인정보의 수집 및 이용목적이 달성되면 지체없이 파기합니다. 회사의 개인정보 파기절차 및 방법은 다음과 같습니다.
 
